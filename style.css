@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #070707;   /* black background */
+  color: #08fa44;              /* Bright green text */
+  text-align: center;          /* Centers all text inside the body */
+}
+
+h1 {
+  color: #020505d8;              /* Changes h1 text to blue */
+}
+h3 {
+  color:darkorchid
+}
+img {
+  width: 30%;                  /* Makes image 30% of container width */
+  max-width: 150px;            /* Prevents image from getting too big */
+  border-color: rgb(255, 153, 0);          /* Sets border color */
+  border-width: 20px;          /* Sets border thickness */
+  border-style: dotted;        /* Applies dotted border */
+}
+#box {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(6, 229, 236);
+    border-radius: 50%;
+    border: 6px solid rgb(183, 13, 235);
+}
+
+section {
+    width: 200px;
+    border: 2px solid rgb(10, 227, 235);
+    padding: 6em 3em;
+}
+button{
+    background-color: aqua;
+    font-size: 2rem;
+    color:azure;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+
+  #container {
+    max-width: 800px;
+    margin: 0 auto; /* centers the container */
+    padding: 20px;
+    background-color: #0e0d0d;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }

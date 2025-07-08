@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css"> <!-- External CSS file -->
+  <style>
+    /* You can move this to style.css if preferred */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #6f0692;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .about-box {
+      border: 3px dashed purple;
+      background-color: #fff0f5;
+      padding: 20px;
+      width: 60%;
+      margin: 20px auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      border-radius: 15px;
+    }
+
+    #container {
+      background-color: #ffd6e0;
+      border: 2px solid #cc0066;
+      padding: 20px;
+      width: 50%;
+      margin: 40px auto;
+      border-radius: 10px;
+    }
+
+    button {
+      background-color: rgb(245, 11, 155);
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: rgb(3, 0, 3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My Fake Website</h1>
+  <h3 class="section-title me">THIS IS ALL ABOUT ME!</h3>
+
+  <!-- Images -->
+  <img src="https://i.pinimg.com/736x/fa/94/a9/fa94a95e5ae91bb238a86cd44f94f93d.jpg" alt="Summer '25" width="150">
+  <img src="https://i.pinimg.com/736x/b7/c1/55/b7c1558375ebb4738fc4b23dd7c92b0d.jpg" alt="Summer '25" width="150">
+  <img src="https://i.pinimg.com/736x/92/b7/e4/92b7e4a2fb1b3de494493a985bfb2777.jpg" alt="Summer '25" width="150">
+  <img src="https://i.pinimg.com/736x/d4/16/f2/d416f21ebe579dbf520c03f832a77a2b.jpg" alt="Summer '25" width="150">
+  <img src="https://i.pinimg.com/736x/da/6e/65/da6e65da91a2f4409c806b29660cc9c7.jpg" alt="Summer '25" width="150">
+
+  <!-- Boxed paragraph -->
+  <div class="about-box">
+    <p>This is my first HTML and CSS project.</p>
+    <p>I'm a 43-year-old married mom and proud Mimi who loves spending time with my family. Halloween is my favorite time of year—I can't resist the spooky fun! I’m also a huge fan of summer, horror movies, and being out in nature. Whether I’m watching a scary film or enjoying the sunshine outdoors, I try to find joy in the little things.</p>
+  </div>
+
+  <!-- Button box -->
+  <div id="container">
+    <h1>ENTER AT YOUR OWN RISK!</h1>
+    <p>Click the button below:</p>
+    <button onclick="alert('OH SHIT!! You clicked the button!')">DO NOT CLICK ME</button>
+  </div>
+
+  <!-- Link -->
+  <p>Check this out: 
+    <a href="https://www.pinterest.com/mrsarthurs2006/me/" target="_blank">Maybe DON'T Click Me!?</a>
+    It’s all about me!!
+  </p>
+
+</body>
+</html>
+

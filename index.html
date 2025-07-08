@@ -5,7 +5,6 @@
   <title>My Website</title>
   <link rel="stylesheet" href="style.css"> <!-- External CSS file -->
   <style>
-    /* You can move this to style.css if preferred */
     body {
       font-family: Arial, sans-serif;
       background-color: #0c0c0c;
@@ -15,9 +14,8 @@
     }
 
     .about-box {
-     border: 3px dashed rgb(248, 247, 247); 
-     background-color: #6f0ae2;
-;
+      border: 3px dashed rgb(248, 247, 247);
+      background-color: #6f0ae2;
       padding: 20px;
       width: 60%;
       margin: 20px auto;
@@ -36,7 +34,7 @@
 
     button {
       background-color: rgb(183, 6, 253);
-      color: white;
+      color: rgb(251, 248, 252);
       padding: 10px 20px;
       font-size: 16px;
       border: none;
@@ -79,8 +77,38 @@
     <a href="https://www.pinterest.com/mrsarthurs2006/me/" target="_blank">Maybe DON'T Click Me!?</a>
     It’s all about me!!
   </p>
+ <body>
+  ...
+  <!-- Your guestbook form -->
+  <div class="about-box">
+    <h2>📖 Leave an Anonymous Message</h2>
+    <form name="guestbook" method="POST" data-netlify="true">
+      <textarea name="message" placeholder="Write your message here..." required rows="5" cols="40" style="border-radius: 10px; padding: 10px;"></textarea><br><br>
+      <button type="submit">Submit Message</button>
+    </form>
+  </div>
+
+  <!-- Static message display -->
+  <div class="about-box">
+    <h2>📝 Guestbook Messages</h2>
+    <div id="guestbook-messages">Loading messages...</div>
+  </div>
+
+  <!-- JavaScript to load messages -->
+  <script>
+    async function loadMessages() {
+      try {
+        const res = await fetch('messages.json');
+        const messages = await res.json();
+        const container = document.getElementById('guestbook-messages');
+        container.innerHTML = messages.map(msg => `<p>${msg}</p>`).join('');
+      } catch (err) {
+        console.error('Failed to load messages:', err);
+        document.getElementById('guestbook-messages').textContent = "Couldn't load messages.";
+      }
+    }
+    window.onload = loadMessages;
+  </script>
 
 </body>
 </html>
-
-
